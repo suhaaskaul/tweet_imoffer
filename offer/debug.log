@@ -1,0 +1,30 @@
+INFO:root:arguments: {'--cover': None,
+ '--cover-image-json': None,
+ '--currency': None,
+ '--delete': False,
+ '--description': None,
+ '--end-date': None,
+ '--file': None,
+ '--file-upload-json': None,
+ '--note': None,
+ '--price': None,
+ '--quantity': None,
+ '--redirect-url': None,
+ '--slug': None,
+ '--start-date': None,
+ '--timezone': None,
+ '--title': None,
+ '--venue': None,
+ '<username>': None,
+ 'auth': False,
+ 'create': True,
+ 'debug': False,
+ 'delete': False,
+ 'geturl': False,
+ 'offer': True}
+INFO:root:API token loaded from file.
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): www.instamojo.com
+DEBUG:root:api path: https://www.instamojo.com/api/1/offer/
+DEBUG:root:parameters: {'cover_image_json': None, 'description': None, 'end_date': None, 'title': None, 'venue': None, 'note': None, 'currency': None, 'base_price': None, 'redirect_url': None, 'timezone': None, 'file_upload_json': None, 'start_date': None, 'quantity': None}
+DEBUG:root:headers: {'X-App-Id': 'f9fbfcebdbb1784d0d69b69ea419bc80', 'X-Auth-Token': u'8af839c60e2fcfb52fb44ab998551604'}
+
