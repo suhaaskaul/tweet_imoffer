@@ -1,0 +1,26 @@
+<html>
+<body>
+<form  action="/gettweets/" method="post" class="form-horizontal">
+                    
+       {% csrf_token %}                  
+    <label  >Twitter User Name</label>
+    
+        <input type="text" name="user" id="id_user" />
+        
+<br/>
+                    
+                      
+    <label >Pin </label>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="text" name="pin" id="id_pin" />
+		
+		<h5>Note : get PIN by going to this link : <a href='{{URL}}' target='_blank' >{{URL}}</a></h5>
+        
+
+ <div class="form-actions">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                        
+                    </div>
+                </form>
+</body>
+</html>

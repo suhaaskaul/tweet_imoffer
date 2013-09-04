@@ -1,0 +1,33 @@
+<html>
+<body>
+
+<h2>Tweet to Offer Conversion</h2>
+<form  action="/createoffer/" method="post">
+    {% csrf_token %}  
+<table border="1">
+<tr>
+<td>Sno</td>
+<td>Title</td>
+<td>Description</td>
+<td>Price</td>
+<td>Currency</td>
+{%for offer in Offers%}
+<tr>
+
+<td>{{forloop.counter}}</td>
+<td> {{offer.title}}</td>
+<td>{{offer.description}}</td>
+<td>{{offer.price}}</td>
+<td>{{offer.currency}}</td>
+</tr>
+
+{%endfor%}
+</table>
+
+<div class="form-actions">
+                        <button type="submit" class="btn btn-primary">Create Offer at Instamojo</button>
+                        
+                    </div>
+                </form>
+</body>
+</html>

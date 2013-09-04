@@ -1,0 +1,26 @@
+<html>
+<body>
+
+<h2>{{User}}</h2>
+<form  action="/createoffer/" method="post">
+    {% csrf_token %}  
+<table border="1">
+
+{%for tweet in Tweets%}
+<tr>
+
+<td><input multiple type="checkbox" name="checkboxArray[]" value="{{tweet}}" /></td>
+<td>{{forloop.counter}}</td>
+<td>{{tweet}}</td>
+</tr>
+
+{%endfor%}
+</table>
+
+<div class="form-actions">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                        
+                    </div>
+                </form>
+</body>
+</html>
